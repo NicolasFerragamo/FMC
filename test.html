@@ -13184,20 +13184,22 @@ div#notebook {
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="n">p</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span> <span class="p">,</span><span class="o">-</span><span class="mi">15</span><span class="p">,</span><span class="mi">15</span><span class="p">])</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-    
-<span class="c1">#widgets.interact(f, p=(-10,10), b=(-5, 3, 0.5))</span>
-<span class="n">interactive_plot</span> <span class="o">=</span> <span class="n">interactive</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="n">b</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span>
-<span class="n">output</span> <span class="o">=</span> <span class="n">interactive_plot</span><span class="o">.</span><span class="n">children</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">output</span><span class="o">.</span><span class="n">layout</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="s1">&#39;350px&#39;</span>
-<span class="n">interactive_plot</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">def f(p, b):</span>
+<span class="sd">    plt.figure(2)</span>
+<span class="sd">    x = np.linspace(-10, 10, num=1000)</span>
+<span class="sd">    plt.plot(x, x**p + b)</span>
+<span class="sd">    plt.ylim(-5, 5)</span>
+<span class="sd">    plt.axis([-5,5 ,-15,15])</span>
+<span class="sd">    plt.grid()</span>
+<span class="sd">    plt.show()</span>
+<span class="sd">    </span>
+<span class="sd">#widgets.interact(f, p=(-10,10), b=(-5, 3, 0.5))</span>
+<span class="sd">interactive_plot = interactive(f, p=(-10,10), b=(-3, 3, 0.5))</span>
+<span class="sd">output = interactive_plot.children[-1]</span>
+<span class="sd">output.layout.height = &#39;350px&#39;</span>
+<span class="sd">interactive_plot</span>
+<span class="sd">&#39;&#39;&#39;</span>
 </pre></div>
 
     </div>
@@ -13214,11 +13216,9 @@ div#notebook {
 
 
 
-  <div class="output_subarea output_widget_view ">
-    <button class="js-nbinteract-widget">
-      Loading widgets...
-    </button>
-  </div>
+<div class="output_text output_subarea output_execute_result">
+<pre>&#34;\ndef f(p, b):\n    plt.figure(2)\n    x = np.linspace(-10, 10, num=1000)\n    plt.plot(x, x**p + b)\n    plt.ylim(-5, 5)\n    plt.axis([-5,5 ,-15,15])\n    plt.grid()\n    plt.show()\n    \n#widgets.interact(f, p=(-10,10), b=(-5, 3, 0.5))\ninteractive_plot = interactive(f, p=(-10,10), b=(-3, 3, 0.5))\noutput = interactive_plot.children[-1]\noutput.layout.height = &#39;350px&#39;\ninteractive_plot\n&#34;</pre>
+</div>
 
 </div>
 
