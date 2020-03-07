@@ -1,3 +1,3 @@
-# nbinteract-tutorial
+# Apunte de Fundamento de los modelos circuitales
 
-Esto es una prueba para crear paginas webs ingteractivas
+Esto es un apunte inretactivo para la materia Fundamentos de los Modelos Circuitales impartida en la Escuela de Educación Secundaria Técnica N° 1 de Vicente López.
