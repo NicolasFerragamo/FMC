@@ -13138,19 +13138,286 @@ div#notebook {
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1><span style="color:blue"> Notación científica y notación ingenieril <span></h1>
-<h2 id="Introducci&#243;n">Introducci&#243;n<a class="anchor-link" href="#Introducci&#243;n">&#182;</a></h2><p>Para abordar este tema pensemos en las necesidades de trabajar con números mas allá de los que utilizamos en vida cotidiana. En el día a día utilizamos números sencillos de manipular, por ejemplo cuando vamos a la panaderia podemos pedir 1/2 Kg de pan o una docena de facturas. Podemos comprar una bebida de 1l, 2l etc. Al momento de pagar los montos hoy en día son altos en general pero son manipulables por ejemplo  25,40, $300, $1200, etc.</p>
-<p>Ahora tómese un momento para pensar en los números con los que trabajar los científicos e ingenieros a diario. Le pueden venir a la mente muchos o quizas no, yo le voy a presentar algunos. Por ejemplo los astrónomos tienen que trabajar con distancias muy grandes. La distancia de la tierra a la luna es de aproximadamente <strong>400.000 Km</strong>, ojo que aca ya usamos un recurso diario la letra <strong>K</strong> que habla de 1000, pero retomaresmos esto mas adelante. Si utilizamos las unidades en metros, esta es <strong>400.000.000m</strong>. Quizas no le paresca tanto pero si es verdad que comienza a complicar. La distancia de la tierra al sol es de <strong>149.597.870.700 m</strong> y de pluton al sol en su afelio(cuando esta mas lejos) es de <strong>7.304.300.000.000 m</strong> <strong><span style="color:red">¡¡Son 7 billones 304 mil 300 millones de metros!!</span></strong> Es hasta dificil de pronunciar.</p>
-<p>Otro ejemplo seria apelando a sus conocimientos de química (recuerde que es importante para nosotros), una de las 7 magnitudes físicas fundamentales que utilizamos a menudo es el <strong>mol</strong>. Por ejemplo en un mol de $O_2$ hay nada mas y nada menos que <strong>602.214.085.700.000.000.000.000</strong> esto es <strong><span style="color:red">602 mil 214 trillones 85 mill 700 billones </span></strong>moléculas de $O_2$. Si no se asusto con esto es muy valiente.</p>
-<p>Pero aca no termina la cosa, no solo hay que pensar en los números grandies ¿y los pequeños?. El matemático <a href="https://es.wikipedia.org/wiki/Max_Planck">Max Planck</a> en 1900 propuso una solución a un problema de física  conocido como <strong><span style="color:red">catástrofe del ultravioleta</span></strong> que que mantenia en vilo a los los físicos a finales del siglo XIX. Para ello propone una constante <strong>h</strong>, la constante de Planck que tiene un valor de <strong>0,000.000.000.000.000.000.000.000.000.000.000.662607015</strong> y esto no es el único número pequeño, piense en el tamaño de un átomo, la carga eléctrica de un proton/electrón que son de nuestro interes.</p>
-<p>Con esto queda claro que necesitamos un sistema que nos permita trabajar con números muy chicos y muy grandes de forma cómoda. Para ello los matemáticos establecieron una nomenclatura llamada <strong><span style="color:blue">Notación científica</span></strong>.</p>
-<h3 id="Notaci&#243;n"><strong>Notaci&#243;n</strong><a class="anchor-link" href="#Notaci&#243;n">&#182;</a></h3><p><b>$$m.10^n$$</b></p>
-<p>donde :</p>
-<ul>
-<li>m es la mantisa del número $m\in \mathbb N \hspace{10px}\diagup  \hspace{10px}1 \leq m \leq 9 $</li>
-<li>10 es la base del sistema que en nuestro caso es decimal.</li>
-<li>n es el exponente, es la potencia de la base 10.</li>
-</ul>
+<h1><span style="color:blue"> Propiedades de la potenciación <span></h1>
+<h2 id="Introducci&#243;n-"><span style="color:blue">Introducci&#243;n </span><a class="anchor-link" href="#Introducci&#243;n-">&#182;</a></h2><p>En esta sección vamos a repasar los conceptos matemáticos que nos van a permitir usar la notación científica.</p>
+<div class="alert alert-block alert-warning">
+ <b> La potenciación es una operación matemática entre dos términos denominados: base ${\displaystyle a}$ y exponente ${\displaystyle n}$. Se escribe $a^n$ y se lee normalmente como "a elevado a la n"</b> 
+</div><div class="alert alert-block alert-warning">
+ <b> Importante si bien se puede trabajar con exponentes racionales e irracionales, nosotros solo vamos a trabajar con exponentes enteros </b>
+</div><h2 id="Propiedades-"><span style="color:blue">Propiedades </span><a class="anchor-link" href="#Propiedades-">&#182;</a></h2><div class="alert alert-block alert-info">
+ <b> Exponente entero</b> 
+</div><p>Elevar un número <b>$a$</b> a un exponente <b>$ n \in \mathbb N$</b> es multiplicar <b>$a$</b> por si mismo <b>$n$</b> veces.</p>
+<div class="alert alert-block alert-info">
+
+$ a^1 = a $
+
+$ a^2 = a\hspace{10px} x \hspace{10px}a $  
+
+$ a^3 = a\hspace{10px} x \hspace{10px}a \hspace{10px} x \hspace{10px}a $ 
+
+$ \vdots   \hspace{50px}  \vdots $   
+
+$ a^n = \underbrace{a\hspace{10px}x \hspace{10px}a\hspace{10px} x\hspace{10px} a\hspace{10px} x... a}_{n 
+\hspace{10px}veces} $
+
+</div><div class="alert alert-block alert-success">
+ <b> Por ejemplo</b> 
+
+$ 2^1 = 2 $
+
+$ 2^2 = 2\hspace{10px} x \hspace{10px}2 = 4 $
+
+$ 2^3 = 2\hspace{10px} x \hspace{10px}2 \hspace{10px} 2 \hspace{10px}2 = 8 $$    
+</div><p>Observe algo muy importante cuando paso de $2^3$ a $2^2$ lo que estamos haciendo es dividir por 2, $8 \div 2 = 4$. Lo mismo ocurre cuando pasamos de $2^2$ a $2^1$, seguimos dividiendo por 2, $4 \div 2 = 2$. Ahora bien nada nos impide suponer que lo mismo ocurre cuando pasamos de $2^1$ a $2^0$ por lo tanto $2 \div 2 = 1$. Por lo cual <strong>¡acabamos de demostrar por que $a^0 = 1$ simpre !!</strong> Pero la cosa no termina aca, podemos seguir un poco mas, de la misma forma si hacemos $1 \div 2 = \frac{1}{2}$ por lo que pasamos de $ 2^0$ a $2^{-1} = \frac{1}{2}$.</p>
+<div class="alert alert-block alert-info">   
+<b>Por definición $$a^0 = 1$$</b>    
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-info">   
+<b>Producto de potencias de igual base</b>    
+</div><p>¿Qué pasa cuando multiplicamos dos o mas números con la misma base a distinto exponente? En este caso se utiliza la misma base y se suman los exponentes.</p>
+<div class="alert alert-block alert-info">   
+<b>$$a^m\hspace{10px} x \hspace{10px}a^n = a^{m+n} $$</b>    
+</div><p>Si lo piensan es muy lógico, estamos multiplicando 2 números y cada número se multiplica a si mismo tantas veces como indique el exponete, por lo cual al descomponer la potencia quedan los <strong>m</strong> numeros multiplicando a los <strong>n</strong> números, por lo cual tenenmos <strong>m+n</strong> números multilicandose.</p>
+<div class="alert alert-block alert-success">
+<b> Como siempre veamos un ejemplo:</b> 
+
+$$ 3^5 \hspace{10px} x \hspace{10px} 3^3 = 3^8 $$
+
+si descomponemos ambas potencias nos queda
+
+$$ (3*3*3*3*3) \hspace{10px} x \hspace{10px} (3*3*3)$$
+
+En total tenemos ocho 3 multiplicándose a si mismos, por lo cual si los juntamos en un solo exponente nos queda
+
+$$ 3^8 $$    
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-info">   
+<b>Potencia de una potencia</b>    
+</div><p>¿Qué pasa cuando elevamos un número <strong>a</strong> a una potencia <strong>n</strong> y luego a otra potencia <strong>m</strong>? En este caso se multiplican los exponentes.</p>
+<div class="alert alert-block alert-info">   
+<b>$$ (a^m)^n = a^{m.n} $$</b>    
+</div><p>Si lo piensan esto también es muy lógico, bueno la matemática se basa en la lógica. Estamos multiplicando la base <strong>m</strong> veses y ese resultado se multiplica <strong>n</strong> veces.</p>
+<div class="alert alert-block alert-success">
+<b> Por ejemplo:</b> 
+
+$$ (3^2)^4 = 3^8 $$
+
+si descomponemos por parte nos queda que tenemos que multiplicar $3^2$ cuatro veces:
+
+$$ (3^2) \hspace{10px} x \hspace{10px} (3^2) \hspace{10px} x \hspace{10px} (3^2)\hspace{10px} x \hspace{10px} (3^2)$$
+
+$$ (3*3) \hspace{10px} x \hspace{10px} (3*3) \hspace{10px} x \hspace{10px} (3*3)\hspace{10px} x \hspace{10px} (3*3) $$    
+
+En total tenemos ocho 3 multiplicándose a si mismos, por lo cual si los juntamos en un solo exponente nos queda
+
+$$ 3^8 $$    
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-info">   
+<b>Potencia de un producto</b>    
+</div><p>¿Qué pasa cuando multiplicamos un número <strong>a</strong> por un número <strong>b</strong> elevado a la <strong>n</strong>? En este caso la potencia de un Producto es igual al producto de cada uno de los factores elevado al mismo exponente, es decir:</p>
+<div class="alert alert-block alert-info">   
+<b>$$(a * b)^n = a^n * b^n $$</b>    
+</div><p>Esta propiedad se deriva de que es lo mismo multiplicar $(a*b)$ primero y al resultado multiplicarlo <strong>n</strong> veces que multiplicar <strong>n</strong> veces a y <strong>n</strong> veces b y luego multiplicar ambos resultados.</p>
+<div class="alert alert-block alert-success">
+<b> Por ejemplo:</b> 
+
+$$ (4*5)^2 = 400 = (4^2 * 5^2) = 16 * 25 = 400 $$
+
+si resolvemos primero la potencia nos queda:
+
+$$ (4*5) \hspace{10px} x \hspace{10px} (4*5)$$
+
+Si utilizamos la propiedad asociativa lo podemos ordenar de la siguietne forma:    
+
+$$ (4*4) \hspace{10px} x \hspace{10px} (5*5) $$    
+
+Por último podemos escribirlo en forma de potencia quedando
+
+$$ 4^2*5^2 $$    
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-info">   
+<b>Potencia de un número negativo</b>    
+</div><p>¿Qué pasa cuando la base es negativa? La verdad no mucho solo hay que acordarse la regla de los signo:</p>
+<div class="alert alert-block alert-warning">   
+<b>$$+ * + = +$$ 
+
+$$+ * - = -$$
+
+$$- * + = -$$
+
+$$- * - = +$$</b> 
+</div><p>Entonces si el exponente es par el resultado es positivo y si el exponente es impar el resultado es negativo.</p>
+<div class="alert alert-block alert-danger">   
+Los números pares se representan como <b>2n</b> y los impares como <b>2n + 1</b> 
+</div>
+<div class="alert alert-block alert-info">   
+<b>$$(-a^n) = a^n si \hspace{10px} n \hspace{10px}es\hspace{10px} par$$</b>  
+
+<b>$$(-a^n) = -a^n si \hspace{10px} n \hspace{10px}es \hspace{10px}par$$</b>      
+</div><p>Esta propiedad se deriva de que si multiplicamos (-1) un número par de veces el resultado es (+1) (ver regla de los signos) y si se multiplica un número impar de veces nos termina quedando un $ + * - = -$</p>
+<div class="alert alert-block alert-success">
+<b> Ejemplo de potencia par:</b> 
+
+$$ (-8)^4 = 8^4 $$
+
+si resolvemos la potencia nos queda:
+
+$$ (-8) \hspace{10px} x \hspace{10px} (-8) \hspace{10px} x \hspace{10px} (-8) \hspace{10px} x \hspace{10px} (-8)$$
+
+Si utilizamos la propiedad asociativa lo podemos ordenar de la siguietne forma:    
+
+$$ (-8*-8) \hspace{10px} x \hspace{10px} (-8*-8) $$    
+
+$$ (64) \hspace{10px} x \hspace{10px} (64) $$ 
+
+Por último podemos escribirlo en forma de potencia quedando
+
+$$ 4096 $$    
+</div><div class="alert alert-block alert-success">
+<b> Ejemplo de potencia impar:</b> 
+
+$$ (-8)^5 = -8^5 $$
+
+si resolvemos la potencia nos queda:
+
+$$ (-8) \hspace{10px} x \hspace{10px} (-8) \hspace{10px} x \hspace{10px} (-8) \hspace{10px} x \hspace{10px} (-8) \hspace{10px} x \hspace{10px} (-8)$$
+
+Si utilizamos la propiedad asociativa lo podemos ordenar de la siguietne forma:    
+
+$$ (-8*-8) \hspace{10px} x \hspace{10px} (-8*-8) \hspace{10px} x \hspace{10px} (-8) $$    
+
+$$ (64) \hspace{10px} x \hspace{10px} (64) \hspace{10px} x \hspace{10px} (-8)$$ 
+
+Por último podemos escribirlo en forma de potencia quedando
+
+$$ -32768$$    
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-info">   
+<b>Inverso multiplicativo</b>    
+</div><p>¿Qué pasa cuando el exponente es negativa?  El exponente negativo solo indica que hay que cambiar la base por su inverso multiplicativo (si esta multiplicando dividrilo por ese número.)</p>
+<p>Esta propiedad se deriva de lo que vimos con el ejemplo de base 2.</p>
+<div class="alert alert-block alert-info">   
+<b>$$a^{-1} = \frac{1}{a}$$</b>   
+
+Si el exponente es distinta de 1  
+
+
+<b>$$a^{-n} = \frac{1}{a^n}$$</b>      
+</div><div class="alert alert-block alert-success">
+<b> Ejemplo de exponente unitario:</b> 
+
+<b>$$5^{-1} = \frac{1}{5}=0,2$$</b>    
+</div><div class="alert alert-block alert-danger">
+<b> Note algo fundamental, si el exponente es negativo el número que representa es menor a 1 $\Rightarrow$ podemos decir que un exponente negativo representa números pequeños y un exponente positivo representa números grandes</b> 
+</div><div class="alert alert-block alert-success">
+<b> Ejemplo de exponente no unitario:</b> 
+
+$$ (2)^{-3}= \frac{1}{2^3} $$
+
+si resolvemos la potencia nos queda:
+
+$$ (2)^{-3}= \frac{1}{2} \hspace{10px} x \hspace{10px} \frac{1}{2} \hspace{10px} x \hspace{10px}\frac{1}{2} $$
+
+$$ \frac{1}{8} = 0,125$$  
+</div><p>No olvide que la base también puede ser negativa y no hay ningún cambio.</p>
+<div class="alert alert-block alert-success">
+<b> Ejemplo de exponente no unitario y base negativa:</b> 
+
+como el exponente es impar la base queda negativa.
+
+$$ (-4)^{-3}= -\frac{1}{4^3} $$
+
+si resolvemos la potencia nos queda:
+
+$$ \frac{1}{64} = -0,015625$$ 
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-info">   
+<b>División de potencias de igual base</b>    
+</div><p>¿Qué pasa cuando hay una fracción?  Para resolver esto tenemos que usar lo que ya aprendimos, sabemos que el denominador de la fracción lo puedo escribir como un exponente negativo en el numerador. Vamos a usar eso y luego nos quedan dos números de igual base multiplicándose, por lo cual como ya vimos hay que sumar los exponentes. <strong>Pero ojo porque un exponente es negativo por lo cual en realidad se restan</strong>.</p>
+<div class="alert alert-block alert-info">   
+<b>$$\frac{a^m}{a^n} = a^m * a^{-n} = a^{m-n}$$</b>     
+
+$$\boxed{\frac{a^m}{a^n} = a^{m-n}}$$      
+</div><div class="alert alert-block alert-success">
+<b> Ejemplo:</b> 
+
+<b>$$\frac{2^5}{2^3}$$</b>  
+
+Empesemos utilizando la propiedad del **Inverso multiplicativo** al segundo término
+
+<b>$$ 2^5 * 2^{-3}$$</b>  
+
+Aplicando la propiedad de Producto de potencias de igual base
+
+<b >$$ 2^{5-3} = 2^2 = 4 $$</b>   
+
+De otra forma si resolvemos primero las potencias lo podemos ver como:
+
+$$\frac{2^5}{2^3} = \frac{\overbrace{2*2*2*2*2}^{5}}{\underbrace{2*2*2}_{3}} = 2*2 = 4$$
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-info">   
+<b>Potencia de una fracción</b>    
+</div><p>¿Qué pasa cuando tenemos una fracción elevada a una potencia?  A esta altura del apunte vamos a ser breves La potencia de un cociente es igual al cociente de cada uno de los números elevado al mismo exponente.</p>
+<div class="alert alert-block alert-info">   
+<b>$$ \left( \frac{a}{b} \right)^n = \frac{a^n}{b^n}$$</b>       
+</div><div class="alert alert-block alert-success">
+<b> Ejemplo de exponente unitario:</b> 
+
+<b>$$ \left( \frac{8}{4} \right)^2 $$</b>    
+
+Podemos resolver la potencia de la siguiente manera:
+
+<b>$$ \left( \frac{8}{4} \right) \hspace{10px} x \hspace{10px} \left( \frac{8}{4} \right) $$</b>  
+
+Podemos reordenar de la siguinete manera
+
+<b>$$ \frac{8*8}{4*4}  $$</b>  
+
+y obtenemos lo que queríamos
+
+<b>$$ \frac{8^2}{4^2}  $$</b>     
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por supuesto el tema no termina acá pero es todo lo que necesitamos para <strong>FMC</strong>.</p>
 
 </div>
 </div>
@@ -13161,7 +13428,7 @@ div#notebook {
  <button type="submit">Inicio
 </form><form method="get" action="https://nicolasferragamo.github.io/FMC/Notacion/introduccion_notacion.html">
  <button type="submit">Anterior
-</form><form method="get" action="https://nicolasferragamo.github.io/FMC/Notacion/introduccion_notacion.html">
+</form><form method="get" action="https://nicolasferragamo.github.io/FMC/Notacion/Propiedades_de_la_potenciacion-Ejercicios.html">
  <button type="submit">Siguietne
 </form>
 </div>
