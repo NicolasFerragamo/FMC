@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 
 
-<title>index</title>
+<title>Propiedades_de_la_potenciacion_Ejercicios</title>
 
 <style type="text/css">
     /*!
@@ -13138,48 +13138,299 @@ div#notebook {
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="-Fundamentos-de-los-Modelos-Circuitales--"><span style="color:blue"> Fundamentos de los Modelos Circuitales  </span><a class="anchor-link" href="#-Fundamentos-de-los-Modelos-Circuitales--">&#182;</a></h1><p>Esta colección de <a href="https://jupyter.org/">jupyter</a> notebooks pretende ser un apunto interactivo para la materia FMC dictada en la escuela E.E.S.T. N° 1 de Vicente López. Cáda uno de estos notebooks sirve como apunte de la materia así como los demás apuntes disponibles en el <a href="https://eest.tecnica1vl.org/tecmood/">moodle</a>. Les recomiendo fervientemente que lean el <a href="https://drive.google.com/file/d/0BytGI1D61kXQMjRoclRUOTVjVkE/view">Apunte FMC</a> además del presente y profundizar en la bibliografía recomendada.</p>
+<h1><span style="color:blue"> Propiedades de la potenciación <span></h1>
+<h2 id="Introducci&#243;n-"><span style="color:blue">Introducci&#243;n </span><a class="anchor-link" href="#Introducci&#243;n-">&#182;</a></h2><p>En esta sección vamos a repasar los conceptos matemáticos que nos van a permitir usar la notación científica.</p>
+<div class="alert alert-block alert-warning">
+ <b> La potenciación es una operación matemática entre dos términos denominados: base ${\displaystyle a}$ y exponente ${\displaystyle n}$. Se escribe $a^n$ y se lee normalmente como "a elevado a la n"</b> 
+</div><div class="alert alert-block alert-warning">
+ <b> Importante si bien se puede trabajar con exponentes racionales e irracionales, nosotros solo vamos a trabajar con exponentes enteros </b>
+</div><h2 id="Propiedades-"><span style="color:blue">Propiedades </span><a class="anchor-link" href="#Propiedades-">&#182;</a></h2><div class="alert alert-block alert-info">
+ <b> Exponente entero</b> 
+</div><p>Elevar un número <b>$a$</b> a un exponente <b>$ n \in \mathbb N$</b> es multiplicar <b>$a$</b> por si mismo <b>$n$</b> veces.</p>
+<div class="alert alert-block alert-info">
+
+$$ a^1 = a $$
+
+$$ \hspace{0.9cm} a^2 = a\hspace{10px} x \hspace{10px}a $$  
+
+$$ \hspace{1.9cm}a^3 = a\hspace{10px} x \hspace{10px}a \hspace{10px} x \hspace{10px}a $$ 
+
+$$ \hspace{1.8cm} \vdots   \hspace{50px}  \vdots $$   
+
+$$ \hspace{3.4cm} a^n = \underbrace{a\hspace{10px}x \hspace{10px}a\hspace{10px} x\hspace{10px} a\hspace{10px} x... a}_{n 
+\hspace{10px}veces} $$
+
+</div><div class="alert alert-block alert-success">
+ <b> Por ejemplo</b> 
+
+$$ 2^1 = 2 $$
+
+$$ \hspace{1.9cm} 2^2 = 2\hspace{10px} x \hspace{10px}2 = 4 $$
+
+$$ \hspace{2.9cm} 2^3 = 2\hspace{10px} x \hspace{10px}2 \hspace{10px} 2 \hspace{10px}2 = 8 $$    
+</div><p>Observe algo muy importante cuando paso de $2^3$ a $2^2$ lo que estamos haciendo es dividir por 2, $8 \div 2 = 4$. Lo mismo ocurre cuando pasamos de $2^2$ a $2^1$, seguimos dividiendo por 2, $4 \div 2 = 2$. Ahora bien nada nos impide suponer que lo mismo ocurre cuando pasamos de $2^1$ a $2^0$ por lo tanto $2 \div 2 = 1$. Por lo cual <strong>¡acabamos de demostrar por que $a^0 = 1$ simpre !!</strong> Pero la cosa no termina aca, podemos seguir un poco mas, de la misma forma si hacemos $1 \div 2 = \frac{1}{2}$ por lo que pasamos de $ 2^0$ a $2^{-1} = \frac{1}{2}$.</p>
+<div class="alert alert-block alert-info">   
+<b>Por definición $$a^0 = 1$$</b>    
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-info">   
+<b>Producto de potencias de igual base</b>    
+</div><p>¿Qué pasa cuando multiplicamos dos o mas números con la misma base a distinto exponente? En este caso se utiliza la misma base y se suman los exponentes.</p>
+<div class="alert alert-block alert-info">   
+<b>$$a^m\hspace{10px} x \hspace{10px}a^n = a^{m+n} $$</b>    
+</div><p>Si lo piensan es muy lógico, estamos multiplicando 2 números y cada número se multiplica a si mismo tantas veces como indique el exponete, por lo cual al descomponer la potencia quedan los <strong>m</strong> numeros multiplicando a los <strong>n</strong> números, por lo cual tenenmos <strong>m+n</strong> números multilicandose.</p>
+<div class="alert alert-block alert-success">
+<b> Como siempre veamos un ejemplo:</b> 
+
+$$ 3^5 \hspace{10px} x \hspace{10px} 3^3 = 3^8 $$
+
+si descomponemos ambas potencias nos queda
+
+$$ (3*3*3*3*3) \hspace{10px} x \hspace{10px} (3*3*3)$$
+
+En total tenemos ocho 3 multiplicándose a si mismos, por lo cual si los juntamos en un solo exponente nos queda
+
+$$ 3^8 $$    
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-info">   
+<b>Potencia de una potencia</b>    
+</div><p>¿Qué pasa cuando elevamos un número <strong>a</strong> a una potencia <strong>n</strong> y luego a otra potencia <strong>m</strong>? En este caso se multiplican los exponentes.</p>
+<div class="alert alert-block alert-info">   
+<b>$$ (a^m)^n = a^{m.n} $$</b>    
+</div><p>Si lo piensan esto también es muy lógico, bueno la matemática se basa en la lógica. Estamos multiplicando la base <strong>m</strong> veses y ese resultado se multiplica <strong>n</strong> veces.</p>
+<div class="alert alert-block alert-success">
+<b> Por ejemplo:</b> 
+
+$$ (3^2)^4 = 3^8 $$
+
+si descomponemos por parte nos queda que tenemos que multiplicar $3^2$ cuatro veces:
+
+$$ (3^2) \hspace{10px} x \hspace{10px} (3^2) \hspace{10px} x \hspace{10px} (3^2)\hspace{10px} x \hspace{10px} (3^2)$$
+
+$$ (3*3) \hspace{10px} x \hspace{10px} (3*3) \hspace{10px} x \hspace{10px} (3*3)\hspace{10px} x \hspace{10px} (3*3) $$    
+
+En total tenemos ocho 3 multiplicándose a si mismos, por lo cual si los juntamos en un solo exponente nos queda
+
+$$ 3^8 $$    
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-info">   
+<b>Potencia de un producto</b>    
+</div><p>¿Qué pasa cuando multiplicamos un número <strong>a</strong> por un número <strong>b</strong> elevado a la <strong>n</strong>? En este caso la potencia de un Producto es igual al producto de cada uno de los factores elevado al mismo exponente, es decir:</p>
+<div class="alert alert-block alert-info">   
+<b>$$(a * b)^n = a^n * b^n $$</b>    
+</div><p>Esta propiedad se deriva de que es lo mismo multiplicar $(a*b)$ primero y al resultado multiplicarlo <strong>n</strong> veces que multiplicar <strong>n</strong> veces a y <strong>n</strong> veces b y luego multiplicar ambos resultados.</p>
+<div class="alert alert-block alert-success">
+<b> Por ejemplo:</b> 
+
+$$ (4*5)^2 = 400 = (4^2 * 5^2) = 16 * 25 = 400 $$
+
+si resolvemos primero la potencia nos queda:
+
+$$ (4*5) \hspace{10px} x \hspace{10px} (4*5)$$
+
+Si utilizamos la propiedad asociativa lo podemos ordenar de la siguietne forma:    
+
+$$ (4*4) \hspace{10px} x \hspace{10px} (5*5) $$    
+
+Por último podemos escribirlo en forma de potencia quedando
+
+$$ 4^2*5^2 $$    
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-info">   
+<b>Potencia de un número negativo</b>    
+</div><p>¿Qué pasa cuando la base es negativa? La verdad no mucho solo hay que acordarse la regla de los signo:</p>
+<div class="alert alert-block alert-warning">   
+<b>$$+ * + = +$$ 
+
+$$+ * - = -$$
+
+$$- * + = -$$
+
+$$- * - = +$$</b> 
+</div><p>Entonces si el exponente es par el resultado es positivo y si el exponente es impar el resultado es negativo.</p>
+<div class="alert alert-block alert-danger">   
+Los números pares se representan como <b>2n</b> y los impares como <b>2n + 1</b> 
+</div>
+<div class="alert alert-block alert-info">   
+<b>$$(-a^n) = a^n si \hspace{10px} n \hspace{10px}es\hspace{10px} par$$</b>  
+
+<b>$$\hspace{0.4cm} (-a^n) = -a^n si \hspace{10px} n \hspace{10px}es \hspace{10px}par$$</b>      
+</div><p>Esta propiedad se deriva de que si multiplicamos (-1) un número par de veces el resultado es (+1) (ver regla de los signos) y si se multiplica un número impar de veces nos termina quedando un $ + * - = -$</p>
+<div class="alert alert-block alert-success">
+<b> Ejemplo de potencia par:</b> 
+
+$$ (-8)^4 = 8^4 $$
+
+si resolvemos la potencia nos queda:
+
+$$ (-8) \hspace{10px} x \hspace{10px} (-8) \hspace{10px} x \hspace{10px} (-8) \hspace{10px} x \hspace{10px} (-8)$$
+
+Si utilizamos la propiedad asociativa lo podemos ordenar de la siguietne forma:    
+
+$$ (-8*-8) \hspace{10px} x \hspace{10px} (-8*-8) $$    
+
+$$ (64) \hspace{10px} x \hspace{10px} (64) $$ 
+
+Por último podemos escribirlo en forma de potencia quedando
+
+$$ 4096 $$    
+</div><div class="alert alert-block alert-success">
+<b> Ejemplo de potencia impar:</b> 
+
+$$ (-8)^5 = -8^5 $$
+
+si resolvemos la potencia nos queda:
+
+$$ (-8) \hspace{10px} x \hspace{10px} (-8) \hspace{10px} x \hspace{10px} (-8) \hspace{10px} x \hspace{10px} (-8) \hspace{10px} x \hspace{10px} (-8)$$
+
+Si utilizamos la propiedad asociativa lo podemos ordenar de la siguietne forma:    
+
+$$ (-8*-8) \hspace{10px} x \hspace{10px} (-8*-8) \hspace{10px} x \hspace{10px} (-8) $$    
+
+$$ (64) \hspace{10px} x \hspace{10px} (64) \hspace{10px} x \hspace{10px} (-8)$$ 
+
+Por último podemos escribirlo en forma de potencia quedando
+
+$$ -32768$$    
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-info">   
+<b>Inverso multiplicativo</b>    
+</div><p>¿Qué pasa cuando el exponente es negativa?  El exponente negativo solo indica que hay que cambiar la base por su inverso multiplicativo (si esta multiplicando dividrilo por ese número.)</p>
+<p>Esta propiedad se deriva de lo que vimos con el ejemplo de base 2.</p>
+<div class="alert alert-block alert-info">   
+<b>$$a^{-1} = \frac{1}{a}$$</b>   
+
+Si el exponente es distinta de 1  
+
+
+<b>$$a^{-n} = \frac{1}{a^n}$$</b>      
+</div><div class="alert alert-block alert-success">
+<b> Ejemplo de exponente unitario:</b> 
+
+<b>$$5^{-1} = \frac{1}{5}=0,2$$</b>    
+</div><div class="alert alert-block alert-danger">
+<b> Note algo fundamental, si el exponente es negativo el número que representa es menor a 1 $\Rightarrow$ podemos decir que un exponente negativo representa números pequeños y un exponente positivo representa números grandes</b> 
+</div><div class="alert alert-block alert-success">
+<b> Ejemplo de exponente no unitario:</b> 
+
+$$ (2)^{-3}= \frac{1}{2^3} $$
+
+si resolvemos la potencia nos queda:
+
+$$ \hspace{2.4cm}(2)^{-3}= \frac{1}{2} \hspace{10px} x \hspace{10px} \frac{1}{2} \hspace{10px} x \hspace{10px}\frac{1}{2} $$
+
+$$ \hspace{1.4cm}\frac{1}{8} = 0,125$$  
+</div><p>No olvide que la base también puede ser negativa y no hay ningún cambio.</p>
+<div class="alert alert-block alert-success">
+<b> Ejemplo de exponente no unitario y base negativa:</b> 
+
+como el exponente es impar la base queda negativa.
+
+$$ (-4)^{-3}= -\frac{1}{4^3} $$
+
+si resolvemos la potencia nos queda:
+
+$$ \hspace{2cm}\frac{1}{64} = -0,015625$$ 
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-info">   
+<b>División de potencias de igual base</b>    
+</div><p>¿Qué pasa cuando hay una fracción?  Para resolver esto tenemos que usar lo que ya aprendimos, sabemos que el denominador de la fracción lo puedo escribir como un exponente negativo en el numerador. Vamos a usar eso y luego nos quedan dos números de igual base multiplicándose, por lo cual como ya vimos hay que sumar los exponentes. <strong>Pero ojo porque un exponente es negativo por lo cual en realidad se restan</strong>.</p>
+<div class="alert alert-block alert-info">   
+<b>$$\frac{a^m}{a^n} = a^m * a^{-n} = a^{m-n}$$</b>     
+
+$$\boxed{\frac{a^m}{a^n} = a^{m-n}}$$      
+</div><div class="alert alert-block alert-success">
+<b> Ejemplo:</b> 
+
+<b>$$\frac{2^5}{2^3}$$</b>  
+
+Empesemos utilizando la propiedad del **Inverso multiplicativo** al segundo término
+
+<b>$$ 2^5 * 2^{-3}$$</b>  
+
+Aplicando la propiedad de Producto de potencias de igual base
+
+<b >$$ 2^{5-3} = 2^2 = 4 $$</b>   
+
+De otra forma si resolvemos primero las potencias lo podemos ver como:
+
+$$\frac{2^5}{2^3} = \frac{\overbrace{2*2*2*2*2}^{5}}{\underbrace{2*2*2}_{3}} = 2*2 = 4$$
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-info">   
+<b>Potencia de una fracción</b>    
+</div><p>¿Qué pasa cuando tenemos una fracción elevada a una potencia?  A esta altura del apunte vamos a ser breves La potencia de un cociente es igual al cociente de cada uno de los números elevado al mismo exponente.</p>
+<div class="alert alert-block alert-info">   
+<b>$$ \left( \frac{a}{b} \right)^n = \frac{a^n}{b^n}$$</b>       
+</div><div class="alert alert-block alert-success">
+<b> Ejemplo de exponente unitario:</b> 
+
+<b>$$ \left( \frac{8}{4} \right)^2 $$</b>    
+
+Podemos resolver la potencia de la siguiente manera:
+
+<b>$$ \left( \frac{8}{4} \right) \hspace{10px} x \hspace{10px} \left( \frac{8}{4} \right) $$</b>  
+
+Podemos reordenar de la siguinete manera
+
+<b>$$ \frac{8*8}{4*4}  $$</b>  
+
+y obtenemos lo que queríamos
+
+<b>$$ \frac{8^2}{4^2}  $$</b>     
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por supuesto el tema no termina acá pero es todo lo que necesitamos para <strong>FMC</strong>.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Tabla-de-contenidos">Tabla de contenidos<a class="anchor-link" href="#Tabla-de-contenidos">&#182;</a></h2><h3 id="1-Introducci&#243;n">1 <strong>Introducci&#243;n</strong><a class="anchor-link" href="#1-Introducci&#243;n">&#182;</a></h3><ul>
-<li><a href="https://nicolasferragamo.github.io/FMC/Introduccion/introduccion.html">Introducción</a>  </li>
-<li><a href="https://nicolasferragamo.github.io/FMC/Introduccion/expectativas_de_logro.html">Expectativas de logro</a></li>
-<li><a href="https://nicolasferragamo.github.io/FMC/Introduccion/Indicadores_de_logro.html">Indicadores de logro</a></li>
-<li><a href="https://nicolasferragamo.github.io/FMC/Introduccion/Criterios_de_evaluacion.html">Criterios de evaluación</a></li>
-<li><a href="https://nicolasferragamo.github.io/FMC/Introduccion/normativa.html">Normativa</a></li>
-<li><a href="https://drive.google.com/file/d/1wDUbkOsRA5R_cGQu3FgnmG4Hkz64NriX/view?usp=sharing">Cronograma 4° 1ra</a></li>
-<li><a href="https://drive.google.com/file/d/1UuopC_F6Q6a_dKBhuU5ARFBZYeITvZtX/view?usp=sharing">Cronograma 4° 2da</a></li>
-</ul>
-<h3 id="2--Notaci&#243;n-cient&#237;fica-y-notaci&#243;n-ingenieril"><strong>2</strong>  Notaci&#243;n cient&#237;fica y notaci&#243;n ingenieril<a class="anchor-link" href="#2--Notaci&#243;n-cient&#237;fica-y-notaci&#243;n-ingenieril">&#182;</a></h3><ul>
-<li><a href="https://nicolasferragamo.github.io/FMC/Notacion/introduccion_notacion.html">Introducción</a></li>
-<li><a href="https://nicolasferragamo.github.io/FMC/Notacion/Propiedades_de_la_potenciacion.html">Propiedades de la potencición</a></li>
-<li><a href="https://nicolasferragamo.github.io/FMC/Notacion/Propiedades_de_la_potenciacion-Ejercicios.html">Ejercicios</a></li>
-</ul>
-<h3 id="3-Electromagnetismo"><strong>3</strong> Electromagnetismo<a class="anchor-link" href="#3-Electromagnetismo">&#182;</a></h3><h3 id="4-Ley-de-Ohm"><strong>4</strong> Ley de Ohm<a class="anchor-link" href="#4-Ley-de-Ohm">&#182;</a></h3><h3 id="5-Leyes-de-Kirchoff"><strong>5</strong> Leyes de Kirchoff<a class="anchor-link" href="#5-Leyes-de-Kirchoff">&#182;</a></h3><h3 id="6-Resistencia-equivalente"><strong>6</strong> Resistencia equivalente<a class="anchor-link" href="#6-Resistencia-equivalente">&#182;</a></h3><h3 id="7-Resoluci&#243;n-sistem&#225;tica-de-circuitos"><strong>7</strong> Resoluci&#243;n sistem&#225;tica de circuitos<a class="anchor-link" href="#7-Resoluci&#243;n-sistem&#225;tica-de-circuitos">&#182;</a></h3><p>Cálculo de tensiones y corrientes parciales.</p>
-<h3 id="8-Energ&#237;a-y-Potencia-el&#233;ctrica"><strong>8</strong> Energ&#237;a y Potencia el&#233;ctrica<a class="anchor-link" href="#8-Energ&#237;a-y-Potencia-el&#233;ctrica">&#182;</a></h3><h3 id="9-Divisor-de-tensi&#243;n-y-de-corriente"><strong>9</strong> Divisor de tensi&#243;n y de corriente<a class="anchor-link" href="#9-Divisor-de-tensi&#243;n-y-de-corriente">&#182;</a></h3><h3 id="10-Teorema-de-superposici&#243;n"><strong>10</strong> Teorema de superposici&#243;n<a class="anchor-link" href="#10-Teorema-de-superposici&#243;n">&#182;</a></h3><h3 id="11-Teoremas-de-Thevenin-y-de-Norton"><strong>11</strong> Teoremas de Thevenin y de Norton<a class="anchor-link" href="#11-Teoremas-de-Thevenin-y-de-Norton">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Referencias">Referencias<a class="anchor-link" href="#Referencias">&#182;</a></h1><ul>
-<li>Fundamentos de circuitos electricos, Charles K. Alexander y Matthew N. O. Sadiku. Mc Graw Hill.</li>
-<li>Introducción al análisis de circuitos, Boylestad, Pearson Prentice Hall.</li>
-<li>Circuitos Eléctricos,Análisis de modelos circuitales, Pueyo, Marco y Queiro. Alfaomega.</li>
-<li>Leyes básicas de la electricidad, concepto y aplicación de las mismas, Esteban Lemos.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Autor">Autor<a class="anchor-link" href="#Autor">&#182;</a></h1><p>Nicolás Ferragamo</p>
-
+<form method="get" action="https://nicolasferragamo.github.io/FMC/index.html">
+ <button type="submit">Inicio
+</form><form method="get" action="https://nicolasferragamo.github.io/FMC/Notacion/Propiedades_de_la_potenciacion.html">
+ <button type="submit">Anterior
+</form><form method="get" action="https://nicolasferragamo.github.io/FMC/Notacion/introduccion_notacion.html">
+ <button type="submit">Siguietne
+</form>
 </div>
 </div>
 </div>
