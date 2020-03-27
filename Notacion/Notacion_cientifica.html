@@ -13200,7 +13200,7 @@ $$ 1000* \frac{1}{2} = 500$$
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="--Como-pasar-un-n&#250;mero-a-notaci&#243;n-cient&#237;fica--"><span style="color:blue"> <b> Como pasar un n&#250;mero a notaci&#243;n cient&#237;fica </b> </span><a class="anchor-link" href="#--Como-pasar-un-n&#250;mero-a-notaci&#243;n-cient&#237;fica--">&#182;</a></h2><p>Para mostrar como hacer esto voy a utilizar un ejemplo. Suponga que quiere representar el número 100.000 (el punto no es decimal, es 100 mil) en notación científica, los pasos son los siguientes.</p>
+<h2 id="--Como-pasar-un-n&#250;mero-a-notaci&#243;n-cient&#237;fica--"><span style="color:blue"> <b> Como pasar un n&#250;mero a notaci&#243;n cient&#237;fica </b> </span><a class="anchor-link" href="#--Como-pasar-un-n&#250;mero-a-notaci&#243;n-cient&#237;fica--">&#182;</a></h2><h3 id="--N&#250;meros-mayores-a-1--"><span style="color:blue"> <b> N&#250;meros mayores a 1 </b> </span><a class="anchor-link" href="#--N&#250;meros-mayores-a-1--">&#182;</a></h3><p>Para mostrar como hacer esto voy a utilizar un ejemplo. Suponga que quiere representar el número 100.000 (el punto no es decimal, es 100 mil) en notación científica, los pasos son los siguientes.</p>
 <div class="alert alert-block alert-info">
 
 1. <b> Tenemos que lograr que solo nos quede un número antes de la coma 1,xxxxx </b>
@@ -13250,7 +13250,39 @@ $$ 5,76980923* 10^6 = 5769809,23 $$
 
 </div><div class="alert alert-block alert-warning"> 
 
-<b> Podemos concluír que el valor del exponente indica cuantos lugares se desplazo el punto decimal y como se desplaza a la izquierda (queremos representar un número grande) el exponente es positivo. </b>
+<b> Podemos concluír que el valor del exponente indica cuantos lugares se desplazo el punto decimal y como se desplaza a la izquierda (queremos representar un número grande) el exponente es <span style="color:brown">positivo </span>. </b>
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="--Numero-menores-a-1--"><span style="color:blue"> <b> Numero menores a 1 </b> </span><a class="anchor-link" href="#--Numero-menores-a-1--">&#182;</a></h3><p>Es muy similar al caso anterior con la diferencia que en ves de divir para hacer el número mas chico lo queremos multiplicar para hacerlo mas grande.</p>
+<div class="alert alert-block alert-info">
+
+1. <b> Tenemos que lograr que solo nos quede un número antes de la coma 1,xxxxx </b>
+2. <b> Tenemos que multiplicarlo por la base elevado al exponente correspondiente </b>
+3. <b> ¡No podemos modificar el valor del número! </b>
+
+</div><p>Empecemos pasando el número 0,0023</p>
+<div class="alert alert-block alert-info">  
+
+Querems que nos quede 2,3 por lo cual tenemos que multiplicar al número por 1000 y no nos olvidemos de dividir por 1000 para no modificar el número.
+
+$$ 0,0023 * 1000* \frac{1}{1000} = 0,0023 $$  
+
+$$ 2,3* \frac{1}{1000} = 0,0023 $$ 
+
+Lo que tenemos que hacer ahora es escribir la fracción como potencia de 10, para lo cual sabemos que $1000 = 10^3$ y como esta en el denominador lo podemos pasar al númerador como una potencia negativa.
+
+$$ 2,3* \frac{1}{10^3} = 0,0023 $$ 
+
+$$ 2,3* 10^{-3} = 0,0023 $$ 
+
+</div><div class="alert alert-block alert-warning"> 
+
+<b> Podemos concluír que el valor del exponente indica cuantos lugares se desplazo el punto decimal y como se desplaza a la derecha (queremos representar un número pequeño) el exponente es <span style="color:brown">negativo </span>. </b>
 
 </div>
 </div>
