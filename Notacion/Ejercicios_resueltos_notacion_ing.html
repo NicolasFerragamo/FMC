@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 
 
-<title>Notacion_ingenieril</title>
+<title>Ejercicios_resueltos_notacion_ing</title>
 
 <style type="text/css">
     /*!
@@ -13138,26 +13138,34 @@ div#notebook {
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1><span style="color:blue"> Notación Ingenieril <span></h1>
-<h2 id="Introducci&#243;n-"><span style="color:blue">Introducci&#243;n </span><a class="anchor-link" href="#Introducci&#243;n-">&#182;</a></h2><p>La notación ingenieril, es otra forma de solucionar el problema de manipular números muy pequeños o muy grande, a diferencia de la notación científica en vez de escribir una potencia de base 10 con un exponente, utiliza eso mismo pero lo remplaza por una letra, seguimos utilizando la misma forma de trabajo vista.</p>
-<p>Día a día utilizamos esta notación solo que no conocian el nombre. Por ejemplo cuando vamos a comprar el pan pedimos por ejemplo un <strong>K</strong>g, cuando compramos una gaseosa el envase dice que contiene 500 <strong>m</strong>l o cuando hablamos de la capacidad de nuestro celular hablamos de <strong>M</strong>B, <strong>G</strong>B, <strong>T</strong>B etc. Buno todas estas letras resaltadas en negrita son las letras que utiliza la notación ingenieril.</p>
-<h2 id="-&#191;Por-que-tener-mas-de-una-forma-de-representar-n&#250;meros?-"><span style="color:blue"> &#191;Por que tener mas de una forma de representar n&#250;meros? </span><a class="anchor-link" href="#-&#191;Por-que-tener-mas-de-una-forma-de-representar-n&#250;meros?-">&#182;</a></h2><p>La verdad es que cada una tiene su uso dependiendo en que estemos trabajando. En areas científicas mas probablemente utilicemos la notación científica y en areas técnicas utilizemos la notación ingenieril.</p>
-<h2 id="&#191;Por-qu&#233;-aprender-las-dos?-"><span style="color:blue">&#191;Por qu&#233; aprender las dos? </span><a class="anchor-link" href="#&#191;Por-qu&#233;-aprender-las-dos?-">&#182;</a></h2><p>Las calculadoras mas modernas permiten trabajar con ambas nomenclaturas, pero en general son calculadores caras. Sin embargo, cualquier calculadora científica, por mas básica que fuere nos permite trabajar con la notación científica, por lo cual lo aprendemos para poder usar la calculadora y realizar los cálculos de forma rápida y eficiente. Mas adelante veremos como utilizar la calculadora.</p>
-<h2 id="-Notaci&#243;n-"><span style="color:blue"> <b>Notaci&#243;n</b> </span><a class="anchor-link" href="#-Notaci&#243;n-">&#182;</a></h2><p>Esta notación es mas sencilla, solamente escribimos el número acompañado de la letra correspondiente</p>
-$$n*letra$$<p>donde :</p>
-<ul>
-<li>n es mantisa del número $n\in \mathbb R \hspace{10px}\diagup  \hspace{10px}1 \leq n &lt; 1000 $</li>
-<li>letra es la base del sistema que en nuestro caso es decimal con un exponente múltiplo de 3.</li>
-</ul>
-<h2 id="-**En-la-notaci&#243;n-ingenier&#237;l-el-exponente-siempre-es-m&#250;ltiplo-de-tres,-eso-es-lo-que-representan-las-letras**-"><span style="color:red"> <b>**En la notaci&#243;n ingenier&#237;l el exponente siempre es m&#250;ltiplo de tres, eso es lo que representan las letras**</b> </span><a class="anchor-link" href="#-**En-la-notaci&#243;n-ingenier&#237;l-el-exponente-siempre-es-m&#250;ltiplo-de-tres,-eso-es-lo-que-representan-las-letras**-">&#182;</a></h2><div class="alert alert-block alert-success">
+<h1><span style="color:blue"> Ejercicios resueltros de Notación científica <span></h1>
 
-<b>Ejemplos:</b>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="--Ejercicio-4:---"><span style="color:brown"> <b> Ejercicio 4:  </b> </span><a class="anchor-link" href="#--Ejercicio-4:---">&#182;</a></h3><p>Escriba los siguientes números en notación científica</p>
+<div class="alert alert-block alert-info">
 
-$$ \hspace{10px} R = 470 K\Omega$$  
+a) $ 124,34 $
 
-$$ I = 15\mu A$$ 
+Recuerden que tenemos que lograr tener un solo dígito antes de la coma, para ello dividimos y multiplicamos por 100.
 
-$$ \hspace{10px} V = 200mV$$     
+$$ \frac{124,34}{100} *100 $$
+
+Luego de hacer la división escribimos al número 100 como potencia de 10
+
+$$ \boxed{ 1,2434x10^2} $$  
+
+Recuerden que vamos a utilizar la forma rápida que es desplazando el punto decimal y tomando como exponente la cantidad de lugares que desplazamos el punto decimal y como es un número grande el exponente es positivo.  
+
+$$ 1\underbrace{24}_{2},34$$
+
+Normalmente vamos a utilizar el número **<span style="color:blue"> REDONDEADO </span> <span style="color:red">NO TRUNCADO</span>** lo que quiere decir que si el número es menor a 5 redondeamos para abajo y si es 5 o mas redondeamos para arriba. En este caso como despues del segundo decimal hay un tres se redondea para abajo quedando 
+
+
+$$ \boxed{ 1,24x10^2} $$  
 
 </div>
 </div>
@@ -13165,307 +13173,142 @@ $$ \hspace{10px} V = 200mV$$
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="--Tabla--"><span style="color:blue"> <b> Tabla </b> </span><a class="anchor-link" href="#--Tabla--">&#182;</a></h2><table>
+<h3 id="--Ejercicio-4:---"><span style="color:brown"> <b> Ejercicio 4:  </b> </span><a class="anchor-link" href="#--Ejercicio-4:---">&#182;</a></h3><p>Escriba los siguientes números en notación científica</p>
+<div class="alert alert-block alert-info">
+
+h) $ 0,00000872 $
+
+Recuerden que tenemos que lograr tener un solo dígito antes de la coma que sea mayor a 0 y menor a 10, para ello dividimos y multiplicamos por 1000000.
+
+$$ 0,00000872 * 1000000 \frac{1}{1000000} $$
+
+Luego de hacer la multiplicación escribimos al número $\frac{1}{1000000}$ como potencia de 10
+
+$$ 8,72x \frac{1}{10^6} $$    
+
+y si lo escribimos en el numerador nos queda.
+
+$$ \boxed{ 8,72x10^{-6}} $$  
+
+Recuerden que vamos a utilizar la forma rápida que es desplazando el punto decimal y tomando como exponente la cantidad de lugares que desplazamos el punto decimal y como el número es pequeño el exponente es negativo.  
+
+$$  0,\underbrace{000008}_{6}72$$     
+
+$$ \boxed{ 8,72x10^{-6}} $$ 
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="--Problemas-Complementarios---"><span style="color:brown"> <b> Problemas Complementarios  </b> </span><a class="anchor-link" href="#--Problemas-Complementarios---">&#182;</a></h3><h3 id="--Ejercicio-7:---"><span style="color:brown"> <b> Ejercicio 7:  </b> </span><a class="anchor-link" href="#--Ejercicio-7:---">&#182;</a></h3><p>¿Qué tanto más lejos del Sol está Saturno que Venus (en km)? Expresa tu respuesta en notacióon científica.</p>
+<table>
 <thead><tr>
-<th style="text-align:center">Prefijo</th>
-<th style="text-align:center">Simbolo</th>
-<th style="text-align:center">Factor</th>
-<th style="text-align:center">Equivalente decimal</th>
+<th><em>Planeta</em></th>
+<th style="text-align:right"><em>Distancia en Km</em></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">yotta</td>
-<td style="text-align:center"><strong>Y</strong></td>
-<td style="text-align:center">$10^{24}$</td>
-<td style="text-align:center">$1.000.000.000.000.000.000.000.000$</td>
+<td><em>Venus</em></td>
+<td style="text-align:right">$1,1x10^8$</td>
 </tr>
 <tr>
-<td style="text-align:center">zetto</td>
-<td style="text-align:center"><strong>Z</strong></td>
-<td style="text-align:center">$10^{21}$</td>
-<td style="text-align:center">$1.000.000.000.000.000.000.000$</td>
-</tr>
-<tr>
-<td style="text-align:center">exa</td>
-<td style="text-align:center"><strong>E</strong></td>
-<td style="text-align:center">$10^{18}$</td>
-<td style="text-align:center">$1.000.000.000.000.000.000$</td>
-</tr>
-<tr>
-<td style="text-align:center">peta</td>
-<td style="text-align:center"><strong>P</strong></td>
-<td style="text-align:center">$10^{15}$</td>
-<td style="text-align:center">$1.000.000.000.000.000$</td>
-</tr>
-<tr>
-<td style="text-align:center">tera</td>
-<td style="text-align:center"><strong>T</strong></td>
-<td style="text-align:center">$10^{12}$</td>
-<td style="text-align:center">$1.000.000.000.000$</td>
-</tr>
-<tr>
-<td style="text-align:center">giga</td>
-<td style="text-align:center"><strong>G</strong></td>
-<td style="text-align:center">$10^{9}$</td>
-<td style="text-align:center">$1.000.000.000$</td>
-</tr>
-<tr>
-<td style="text-align:center">mega</td>
-<td style="text-align:center"><strong>M</strong></td>
-<td style="text-align:center">$10^{6}$</td>
-<td style="text-align:center">$1.000.000$</td>
-</tr>
-<tr>
-<td style="text-align:center">kilo</td>
-<td style="text-align:center"><strong>K</strong></td>
-<td style="text-align:center">$10^{3}$</td>
-<td style="text-align:center">$1.000$</td>
-</tr>
-<tr>
-<td style="text-align:center">sin prefijo</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">$10^{0}$</td>
-<td style="text-align:center">$1$</td>
-</tr>
-<tr>
-<td style="text-align:center">mili</td>
-<td style="text-align:center"><strong>m</strong></td>
-<td style="text-align:center">$10^{-3}$</td>
-<td style="text-align:center">$0.001$</td>
-</tr>
-<tr>
-<td style="text-align:center">micro</td>
-<td style="text-align:center"><strong>$\mu$</strong></td>
-<td style="text-align:center">$10^{-6}$</td>
-<td style="text-align:center">$0.000001$</td>
-</tr>
-<tr>
-<td style="text-align:center">nano</td>
-<td style="text-align:center"><strong>n</strong></td>
-<td style="text-align:center">$10^{-9}$</td>
-<td style="text-align:center">$0.000000001$</td>
-</tr>
-<tr>
-<td style="text-align:center">pico</td>
-<td style="text-align:center"><strong>p</strong></td>
-<td style="text-align:center">$10^{-12}$</td>
-<td style="text-align:center">$0.000000000001$</td>
-</tr>
-<tr>
-<td style="text-align:center">fento</td>
-<td style="text-align:center"><strong>f</strong></td>
-<td style="text-align:center">$10^{-15}$</td>
-<td style="text-align:center">$0.000000000000001$</td>
-</tr>
-<tr>
-<td style="text-align:center">atto</td>
-<td style="text-align:center"><strong>a</strong></td>
-<td style="text-align:center">$10^{-18}$</td>
-<td style="text-align:center">$0.000000000000000001$</td>
-</tr>
-<tr>
-<td style="text-align:center">zecto</td>
-<td style="text-align:center"><strong>z</strong></td>
-<td style="text-align:center">$10^{-21}$</td>
-<td style="text-align:center">$0.000000000000000000001$</td>
-</tr>
-<tr>
-<td style="text-align:center">yocto</td>
-<td style="text-align:center"><strong>y</strong></td>
-<td style="text-align:center">$10^{-24}$</td>
-<td style="text-align:center">$0.000000000000000000000001$</td>
+<td><em>Saturno</em></td>
+<td style="text-align:right">$1.4x10^9$</td>
 </tr>
 </tbody>
 </table>
 <div class="alert alert-block alert-info">
-En la tabla podemos ver como se relacionan ambas notaciones. Podemos notar que hay un paso de 1000 entre un símbolo y otro lo que eqivale a $10^3$.
+
+Podemos ver la diferencia entre las distancias o también el porcentaje.
+
+Empecemos calculando la diferencia
+
+$$ 1,4x10^9-1,1x10^8 $$
+
+Lo primero que tenemos que hacer para simplificar las cosas es que sus exponentes sean iguales. Para ello expresamos todo con exponetne 9 
+
+$$ 1,4x10^9-0,11x10^9 $$ 
+
+Ahora como tienen el mismo exponente podemos restar las mantisas
+
+$$ 1,4 - 0,11 = 1,29$$
+
+y volvemos a poner el exponente quedando finalmente 
+
+$$ \boxed{1,29x10^9 Km} $$    
+
+si queremos el porcentaje lo que tenemos que hacer es la división, 
+
+$$ \frac{1,4x10^9}{1,1x10^8}$$
+
+Por la propiedad de potencias de igual base se pueden restar quedando
+
+$$ \frac{1,4}{1,1}*10^{9-8}$$
+
+$$ \frac{1,4}{1,1}*10^{1}$$
+
+$$ 1,2727x10^{1}$$
+
+Redondeando el resultado queda
+
+$$ \boxed{12,73}$$
+
+Lo que quiere decir que Saturno esta 12,73 veces mas lejos del sol que Venus.
+
 </div>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="--Como-pasar-un-n&#250;mero-a-notaci&#243;n-ingenieril--"><span style="color:blue"> <b> Como pasar un n&#250;mero a notaci&#243;n ingenieril </b> </span><a class="anchor-link" href="#--Como-pasar-un-n&#250;mero-a-notaci&#243;n-ingenieril--">&#182;</a></h2><h3 id="--N&#250;meros-mayores-a-1--"><span style="color:blue"> <b> N&#250;meros mayores a 1 </b> </span><a class="anchor-link" href="#--N&#250;meros-mayores-a-1--">&#182;</a></h3><p>Para mostrar como hacer esto vamos a utilizar un ejemplo. Suponga que queremos representar el número $1234$  en notación ingenieril.</p>
+<h3 id="--Ejercicio-13:---"><span style="color:brown"> <b> Ejercicio 13:  </b> </span><a class="anchor-link" href="#--Ejercicio-13:---">&#182;</a></h3><p>Sabemos del problema número 10 que la masa del electrón es $9x10^{−31}$kg. Si en un tubo de aceleración alcanza una velocidad de $2x10^8$ m/seg, ¿Qué energía cinética tendrá el electrón dentro de dicho tubo? Para realizar este problema debes recordar que la energía cinética se calcula como: $E_C = \frac{1}{2}*m*v^2$</p>
 <div class="alert alert-block alert-info">
 
-* <b> Tenemos que desplazar el punto decimal de a tres lugares a la vez </b>
+Empecemos remplazando los valores en la ecuación de la energía
 
-Como no esta escrito, el punto decimal se encuentra al final del número.
+$$ E_C = \frac{1}{2}*9x10^{−31}$kg* (2x10^8)^2  \left( \frac{m}{seg}\right)^2 $$
 
-$$ 1234,0$$   
+Lo primero que tenemos que hacer utilizar la regla de la potencia de potencia
 
-Lo desplazamos 3 lugares y nos queda    
+$$ E_C = \frac{1}{2}*9x10^{−31}$kg* 2^2x10^{2*8}   \left( \frac{m}{seg}\right)^2 $$
 
-$$ 1,\underbrace{234}_{3} $$ 
+$$ E_C = \frac{1}{2}*9x10^{−31}$kg* 4x10^{16}   \left( \frac{m}{seg}\right)^2 $$
 
-Si miran en la tabla cuando desplazamos tres lugares se usa la letra <b>K</b>
+Ahora usamos la propiedad de potencias de igual base
 
-El resultado final es     
-$$ \boxed{1,234 K} $$     
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Veamos otro ejemplo un poco mas complejo. Representar el número $863540394,23$</p>
-<div class="alert alert-block alert-info">
+$$ E_C = \frac{1}{2}*9kg * 4 * 10^{16-31} \left( \frac{m}{seg}\right)^2 $$    
 
-En este caso tenemos dos opciones posibles. Podemos desplazar el punto decimal 6 lugares o nueve lugares.    
+simplificando el $\frac{1}{2}$ con el 4 nos queda 
 
-* <b> Empecemos desplazando el punto decimal 6 lugares </b>
+$$ E_C = 9kg * 2 * 10^{-15}   \left( \frac{m}{seg}\right)^2 $$  
 
-$$ 863,\underbrace{540394}_{6}23 $$ 
+$$ E_C = 18x10^{-15}  \frac{kg*m^2}{seg^2} $$  
 
-Si miran en la tabla cuando desplazamos seis lugares se usa la letra <b>M</b>
+Esta uindad es el J, y corriendo el decimal un lugar mas para quedarnos con la forma de la notación científica nos queda
 
-El resultado final redondeado es:   
-$$ \boxed{863,54M} $$     
+$$ \boxed{ E_C = 1,8x10^{-14} J} $$  
 
-* <b> Si ahora desplazamos el punto decimal 9 lugares </b>
-
-$$ 0,\underbrace{863540394}_{9}23 $$ 
-
-Si miran en la tabla cuando desplazamos seis lugares se usa la letra <b>G</b>
-
-El resultado final redondeado es:   
-$$ \boxed{0,86G} $$         
-</div><div class="alert alert-block alert-warning"> 
-
-<b> Podemos concluír que la letra que usemos es representa la cantidad de luguares que desplazamos el punto decimal, <span style="color:brown">recuerde que debe ser múltiplo de 3 </span>. Como regla memotecnica puede utilizar si el número es grande letras mayusculas y si es pequeño letra minuscula. </b>  
-</div><p><span style="color:brown"><b>Particularmente coincidero mejor la primera opción ya que tenemos una representación mas precisa del número.</b></span></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="--N&#250;meros-menores-a-1--"><span style="color:blue"> <b> N&#250;meros menores a 1 </b> </span><a class="anchor-link" href="#--N&#250;meros-menores-a-1--">&#182;</a></h3><p>Para mostrar como hacer esto vamos a utilizar un ejemplo. Suponga que queremos representar el número $0,00456$  en notación ingenieril.</p>
-<div class="alert alert-block alert-info">
-
-* <b> Tenemos que desplazar el punto decimal de a tres lugares a la vez </b>
-
-$$ 0,\underbrace{004}_{3}56 $$ 
-
-Al desplazamos 3 lugares y nos queda    
-
-$$ 4,56 $$ 
-
-Si miran en la tabla cuando desplazamos tres lugares hacia la derecha se usa la letra <b>m</b>. Recuerde letra minúscula para números pequeños.
-
-El resultado final es     
-$$ \boxed{4,56m} $$     
 </div>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Veamos otro ejemplo un poco mas complejo. Representar el número $0,000000056989$</p>
-<div class="alert alert-block alert-info">
-
-En este caso tenemos dos opciones posibles. Podemos desplazar el punto decimal 9 lugares o 12 lugares.    
-
-* <b> Empecemos desplazando el punto decimal 9 lugares </b>
-
-$$ 0,\underbrace{000000056}_{9}989 $$ 
-
-Si miran en la tabla cuando desplazamos snueve lugares se usa la letra <b>n</b>
-
-El resultado final redondeado es:   
-$$ \boxed{56,99n} $$     
-
-* <b> Si ahora desplazamos el punto decimal 12 lugares </b>
-
-$$ 0,\underbrace{000000056989}_{12} $$ 
-
-Si miran en la tabla cuando desplazamos 12 lugares se usa la letra <b>p</b>
-
-El resultado final redondeado es:   
-$$ \boxed{56989p} $$         
-</div><div class="alert alert-block alert-warning"> 
-
-<b> Podemos concluír que la letra que usemos es representa la cantidad de luguares que desplazamos el punto decimal, <span style="color:brown">recuerde que debe ser múltiplo de 3 </span>. Como regla memotecnica puede utilizar si el número es grande letras mayusculas y si es pequeño letra minuscula. </b>  
-</div><p><span style="color:brown"><b>Particularmente coincidero mejor la primera opción ya que tenemos una representación  que es mas facil de manipular, al ser un número tan pequeño no estamos cometiendo un error grande al redondear a dos decimales.</b></span></p>
+<p>Por último ya puede empezar a resolver algunos ejercicios de la <a href="https://drive.google.com/open?id=1W2H5Tlm3MP3C3KNF6g2vaAQkn6c9yyPC">Guia 1</a>.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="--Realice-los-siguientes-ejercicios--"><span style="color:blue"> <b> Realice los siguientes ejercicios </b> </span><a class="anchor-link" href="#--Realice-los-siguientes-ejercicios--">&#182;</a></h3><p><strong>Antes de comentar no olvide presionar el boton  <span style="color:red">Show Widgets</span> para poder responder a los ejercicios</strong></p>
-
-</div>
-</div>
-</div>
-
-  
-
-  <div class="nbinteract-hide_in
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nbi:hide_in</span>
-<span class="n">nbi</span><span class="o">.</span><span class="n">multiple_choice</span><span class="p">(</span><span class="n">question</span><span class="o">=</span><span class="s2">&quot;Seleccione la/s opción correcta que represente al número 1410 en notación ingenieril&quot;</span><span class="p">,</span>
-                    <span class="n">choices</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;1k410&#39;</span><span class="p">,</span> <span class="s1">&#39;1,410K&#39;</span><span class="p">,</span> <span class="s1">&#39;1,41&#39;</span><span class="p">,</span><span class="s1">&#39;14,10&#39;</span><span class="p">],</span>
-                    <span class="n">answers</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
-
-<span class="c1"># nbi:hide_in</span>
-<span class="n">nbi</span><span class="o">.</span><span class="n">multiple_choice</span><span class="p">(</span><span class="n">question</span><span class="o">=</span><span class="s2">&quot;Seleccione la/s opción correcta que represente al número 0,0012 en notación ingenieril&quot;</span><span class="p">,</span>
-                    <span class="n">choices</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;1200K&#39;</span><span class="p">,</span> <span class="s1">&#39;120m&#39;</span><span class="p">,</span> <span class="s1">&#39;0,0000012K&#39;</span><span class="p">,</span><span class="s1">&#39;1,2m&#39;</span><span class="p">],</span>
-                    <span class="n">answers</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    
-
-
-
-  <div class="output_subarea output_widget_view ">
-    <button class="js-nbinteract-widget">
-      Loading widgets...
-    </button>
-  </div>
-
-</div>
-
-<div class="output_area">
-
-    
-
-
-
-  <div class="output_subarea output_widget_view ">
-    <button class="js-nbinteract-widget">
-      Loading widgets...
-    </button>
-  </div>
-
-</div>
-
-</div>
-</div>
-
-  </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <form method="get" action="https://nicolasferragamo.github.io/FMC/index.html">
  <button type="submit">Inicio
-</form><form method="get" action="https://nicolasferragamo.github.io/FMC/Ejercicio_resueltos_notacion.html">
+</form><form method="get" action="https://nicolasferragamo.github.io/FMC/Notacion/Notacion_cientifica.html">
  <button type="submit">Anterior
-</form><form method="get" action="https://nicolasferragamo.github.io/FMC/Notacion/Ejercicios_resueltos_notacion_ing.html">
+</form><form method="get" action="https://nicolasferragamo.github.io/FMC/Notacion/Notacion_ingenieril.html">
  <button type="submit">Siguietne
 </form>
 </div>
