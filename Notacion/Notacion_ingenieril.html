@@ -13394,11 +13394,72 @@ $$ \boxed{56989p} $$
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="--Realice-los-siguientes-ejercicios--"><span style="color:blue"> <b> Realice los siguientes ejercicios </b> </span><a class="anchor-link" href="#--Realice-los-siguientes-ejercicios--">&#182;</a></h3><p><strong>Antes de comenzar no olvide presionar el boton  <span style="color:red">Show Widgets</span> para poder responder a los ejercicios</strong></p>
+<h3 id="--Realice-los-siguientes-ejercicios--"><span style="color:blue"> <b> Realice los siguientes ejercicios </b> </span><a class="anchor-link" href="#--Realice-los-siguientes-ejercicios--">&#182;</a></h3><p><strong>Antes de comenzar no olvide presionar el boton  <span style="color:red">Show Widgets</span> para poder responder a los ejercicios</strong>
+El primero es para calentar motores, desplace el slider para ver como cambia el número.</p>
 
 </div>
 </div>
 </div>
+
+  
+
+  <div class="nbinteract-hide_in
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nbi:hide_in</span>
+
+<span class="n">multiplo</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**</span><span class="mi">24</span><span class="p">,</span><span class="s1">&#39;z&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**</span><span class="mi">21</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**</span><span class="mi">18</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**</span><span class="mi">15</span><span class="p">,</span><span class="s1">&#39;p&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**</span><span class="mi">12</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**</span><span class="mi">9</span><span class="p">,</span><span class="s1">&#39;u&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**</span><span class="mi">6</span><span class="p">,</span>
+            <span class="s1">&#39;m&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;sin multiplo&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;K&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**-</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;M&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**-</span><span class="mi">6</span><span class="p">,</span><span class="s1">&#39;G&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**-</span><span class="mi">9</span><span class="p">,</span><span class="s1">&#39;T&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**-</span><span class="mi">12</span><span class="p">,</span>
+            <span class="s1">&#39;P&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**-</span><span class="mi">15</span><span class="p">,</span><span class="s1">&#39;E&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**-</span><span class="mi">18</span><span class="p">,</span><span class="s1">&#39;Z&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**-</span><span class="mi">21</span><span class="p">,</span><span class="s1">&#39;Y&#39;</span><span class="p">:</span><span class="mi">10</span><span class="o">**-</span><span class="mi">24</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Se muestra como el número 470 se escribe cuando cambiamos de multiplo y submultiplo&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">visualitation</span><span class="p">(</span><span class="n">multiplicador</span><span class="p">):</span>  
+    
+    <span class="k">return</span> <span class="mi">470</span><span class="o">*</span><span class="n">multiplo</span><span class="p">[</span><span class="n">multiplicador</span><span class="p">],</span> <span class="n">multiplicador</span>
+
+<span class="n">interact</span><span class="p">(</span><span class="n">visualitation</span><span class="p">,</span> <span class="n">multiplicador</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;z&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;p&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;u&#39;</span><span class="p">,</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;sin multiplo&#39;</span><span class="p">,</span><span class="s1">&#39;K&#39;</span><span class="p">,</span><span class="s1">&#39;M&#39;</span><span class="p">,</span><span class="s1">&#39;G&#39;</span><span class="p">,</span><span class="s1">&#39;T&#39;</span><span class="p">,</span><span class="s1">&#39;P&#39;</span><span class="p">,</span><span class="s1">&#39;E&#39;</span><span class="p">,</span><span class="s1">&#39;Z&#39;</span><span class="p">,</span><span class="s1">&#39;Y&#39;</span><span class="p">]);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Se muestra como el número 470 se escribe cuando cambiamos de multiplo y submultiplo
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    
+
+
+
+  <div class="output_subarea output_widget_view ">
+    <button class="js-nbinteract-widget">
+      Loading widgets...
+    </button>
+  </div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
 
   
 
