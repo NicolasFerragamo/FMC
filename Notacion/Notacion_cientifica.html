@@ -13178,7 +13178,7 @@ $$ 1000* \frac{1}{2} = 500$$
 
 </div><h2 id="--Notaci&#243;n--"><span style="color:blue"> <b> Notaci&#243;n </b> </span><a class="anchor-link" href="#--Notaci&#243;n--">&#182;</a></h2>$$m.10^n$$<p>donde :</p>
 <ul>
-<li>m es la mantisa del número $m\in \mathbb N \hspace{10px}\diagup  \hspace{10px}1 \leq m \leq 9 $</li>
+<li>m es la mantisa del número $m\in \mathbb N \hspace{10px}\diagup  \hspace{10px}1 \leq m &lt; 10 $</li>
 <li>10 es la base del sistema que en nuestro caso es decimal.</li>
 <li>n es el exponente, es la potencia de la base 10.</li>
 </ul>
@@ -13289,7 +13289,7 @@ $$ \boxed{2,3* 10^{-3} = 0,0023} $$
     <span class="k">return</span> <span class="s1">&#39;El número en notación científica 1,3x10^</span><span class="si">{}</span><span class="s1"> se escribe de forma desarrollada como  </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">exponente</span><span class="p">,</span> <span class="n">num</span><span class="p">)</span>
 
 
-<span class="n">interact</span><span class="p">(</span><span class="n">prop_wins</span><span class="p">,</span> <span class="n">exponente</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">24</span><span class="p">));</span>
+<span class="n">interact</span><span class="p">(</span><span class="n">prop_wins</span><span class="p">,</span>  <span class="n">exponente</span><span class="o">=</span><span class="n">exponente</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -13498,7 +13498,7 @@ $$ \boxed{24,984x10^{-3} = 0,02484} $$
 <span class="n">exponente</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">handle_color</span> <span class="o">=</span> <span class="s1">&#39;lightblue&#39;</span>
 
 <span class="k">def</span> <span class="nf">prop_wins</span><span class="p">(</span><span class="n">exponente</span><span class="p">):</span>
-    <span class="n">num</span> <span class="o">=</span> <span class="mf">1.3</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="n">exponente</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mf">1.3</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="n">exponente</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
     <span class="k">return</span> <span class="s1">&#39;El número en notación científica 1,3x10^</span><span class="si">{}</span><span class="s1"> se escribe de forma desarrollada como  </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">exponente</span><span class="p">,</span> <span class="n">num</span><span class="p">)</span>
 
 
